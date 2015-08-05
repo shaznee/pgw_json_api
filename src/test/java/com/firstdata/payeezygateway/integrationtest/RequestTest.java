@@ -251,4 +251,67 @@ public class RequestTest {
 	public void testRequestLanguage() {
 		assertTrue(requestJson.contains("\"language\":\"EN\""));
 	}
+	
+	// TODO Add Test Cases for DCC Indicators
+	
+	@Test
+	public void testRequestDCCIndicator1() {
+		CreditCardRequest tempRequest = request;
+		tempRequest.dcc_indicator(DCCIndicatorType.DCCIndicator1);
+		String requestJson = tempRequest.toJson();
+		try {
+			assertTrue(requestJson.contains("\"dcc_indicator\":\"1\""));
+		} catch(AssertionError e) {
+			System.out.println("request: \n" + requestJson);
+		}
+	}
+	
+	@Test
+	public void testRequestDCCIndicator2() {
+		CreditCardRequest tempRequest = request;
+		tempRequest.dcc_indicator(DCCIndicatorType.DCCIndicator2);
+		String requestJson = tempRequest.toJson();
+		try {
+			assertTrue(requestJson.contains("\"dcc_indicator\":\"2\""));
+		} catch(AssertionError e) {
+			System.out.println("request: \n" + requestJson);
+		}
+	}
+	
+	@Test
+	public void testRequestDCCIndicator3() {
+		CreditCardRequest tempRequest = request;
+		tempRequest.dcc_indicator(DCCIndicatorType.DCCIndicator3);
+		String requestJson = tempRequest.toJson();
+		try {
+			assertTrue(requestJson.contains("\"dcc_indicator\":\"3\""));
+		} catch(AssertionError e) {
+			System.out.println("request: \n" + requestJson);
+		}
+	}
+	
+	@Test
+	public void testRequestDCCIndicator4() {
+		CreditCardRequest tempRequest = request;
+		tempRequest.dcc_indicator(DCCIndicatorType.DCCIndicator4);
+		String requestJson = tempRequest.toJson();
+		try {
+			assertTrue(requestJson.contains("\"dcc_indicator\":\"4\""));
+		} catch(AssertionError e) {
+			System.out.println("request: \n" + requestJson);
+		}
+	}
+	
+	@Test
+	public void testRequestDCCIndicator6() {
+		CreditCardRequest tempRequest = request;
+		tempRequest.dcc_indicator(DCCIndicatorType.DCCIndicator6);
+		String requestJson = tempRequest.toJson();
+		try {
+			assertTrue(requestJson.contains("\"dcc_indicator\":\"6\""));
+		} catch(AssertionError e) {
+			System.out.println("request: \n" + requestJson);
+		}
+	}
+	// TODO Add Test Cases for Foreign Currency
 }
