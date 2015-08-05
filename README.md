@@ -7,7 +7,7 @@ This is the primary class for interfacing with Payeezy Gateway JSON API.
 
 #Quick Start:
   
-     import com.firstdata.globalgatewaye4.*;
+     import com.firstdata.payeezygateway.*;
   
       public Class Client {
  		     public static void main(String[] args) {
