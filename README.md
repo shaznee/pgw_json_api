@@ -1,4 +1,4 @@
-# e4api
+# Payeezy Gateway JSON API
 Payeezy Gateway Java API Library
 
 INTENDED FOR DEMONSTRATION PURPOSES ONLY.  NOT FOR PRODUCTION USE.
