@@ -78,6 +78,7 @@ INTENDED FOR DEMONSTRATION PURPOSES ONLY.  NOT FOR PRODUCTION USE.</description>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.1</version>
 				<executions>
 					<execution>
 						<id>attach-javadocs</id>
@@ -90,6 +91,7 @@ INTENDED FOR DEMONSTRATION PURPOSES ONLY.  NOT FOR PRODUCTION USE.</description>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
+				<version>2.1</version>
 				<executions>
 					<execution>
 						<id>attach-sources</id>
