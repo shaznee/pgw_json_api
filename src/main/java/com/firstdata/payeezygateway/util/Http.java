@@ -100,42 +100,12 @@ public class Http {
 			throw new UnexpectedException(ioE.getMessage(), ioE);
 		}
 		catch (Exception e) {
-			// TODO Auto-generated catch block
 			throw new UnexpectedException(e.getMessage(), e);
 		}
 		finally {
 			connection.disconnect();
 		}
 	}
-	/**
-	 * @param request {@link #Request} object to be used for the transaction request.
-	 * @return Returns a {@link #String} containing the transaction data in JSON format.
-	 * @exception InvalidTransactionException If transaction data is invalid (HTTP 400), this exception is thrown.
-	 * @exception AuthenticationException If authentication values are incorrect (HTTP 401), this exception is thrown.
-	 * @exception UnexpectedException Catches all unexpected HTTP status codes.
-	 */
-/*	public String doRequest(Request request) {
-		String response = null;
-		
-		try {
-			HttpURLConnection connection = buildConnection();
-			connection.getOutputStream().write(request.toJson().getBytes("UTF-8"));
-			connection.getOutputStream().close();
-			
-			if(isErrorCode(connection.getResponseCode())) {
-				throwHttpStatusException(connection.getResponseCode(), StringUtils.inputStreamToString(connection.getErrorStream()));				
-			}
-			
-			InputStream responseStream = connection.getInputStream();
-			
-			response = StringUtils.inputStreamToString(responseStream);
-			
-			return response;
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			throw new UnexpectedException(e.getMessage(), e);
-		}
-	}*/
 	
 	private static void throwHttpStatusException(int statusCode, String message) {
 		switch(statusCode) {
