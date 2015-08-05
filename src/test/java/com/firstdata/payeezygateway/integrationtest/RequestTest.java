@@ -30,7 +30,6 @@ public class RequestTest {
 				.currency_code("USD")
 				.customer_ref("CustomerReference")
 				.cvd_presence_ind("1")
-				.ecommerce_flag(EcommerceFlagType.ECIEncrypted)
 				.partial_redemption("false")
 				.reference_3("ReferenceThree")
 				.reference_no("Reference_No")
@@ -96,11 +95,6 @@ public class RequestTest {
 	public void testRequestCcNumber() {
 		assertTrue(requestJson.contains("\"cc_number\":\"4111111111111111\""));
 	}
-
-/*	@Test
-	public void testRequestCcVerificationStr1() {
-		assertTrue(requestJson.contains("\"cc_verification_str1\":\"Y23 Main Street\""));
-	}*/
 	
 	@Test
 	public void testRequestCcVerificationStr2() {
@@ -128,7 +122,7 @@ public class RequestTest {
 	}
 	
 	@Test
-	public void testRequestEcommerceFlag() {
+	public void testRequestEcommerceFlag7() {
 		assertTrue(requestJson.contains("\"ecommerce_flag\":\"7\""));
 	}
 	
@@ -252,8 +246,6 @@ public class RequestTest {
 		assertTrue(requestJson.contains("\"language\":\"EN\""));
 	}
 	
-	// TODO Add Test Cases for DCC Indicators
-	
 	@Test
 	public void testRequestDCCIndicator1() {
 		CreditCardRequest tempRequest = request;
@@ -313,5 +305,64 @@ public class RequestTest {
 			System.out.println("request: \n" + requestJson);
 		}
 	}
-	// TODO Add Test Cases for Foreign Currency
+	
+	@Test
+	public void testRequestForeignAmount() {
+		CreditCardRequest tempRequest = request;
+		tempRequest.foreign_amount("1.00");
+		String requestJson = tempRequest.toJson();
+		try {
+			assertTrue(requestJson.contains("\"foreign_amount\":\"1.00\""));
+		} catch(AssertionError e) {
+			System.out.println("request: \n" + requestJson);
+		}
+	}
+	
+	@Test
+	public void testRequestForeignCurrencyCode() {
+		CreditCardRequest tempRequest = request;
+		tempRequest.foreign_currency_code("USD");
+		String requestJson = tempRequest.toJson();
+		try {
+			assertTrue(requestJson.contains("\"foreign_currency_code\":\"USD\""));
+		} catch(AssertionError e) {
+			System.out.println("request: \n" + requestJson);
+		}
+	}
+	
+	@Test
+	public void testRequestExchangeRate() {
+		CreditCardRequest tempRequest = request;
+		tempRequest.exchange_rate("1.333");
+		String requestJson = tempRequest.toJson();
+		try {
+			assertTrue(requestJson.contains("\"exchange_rate\":\"1.333\""));
+		} catch(AssertionError e) {
+			System.out.println("request: \n" + requestJson);
+		}
+	}
+	
+	@Test
+	public void testRequestMarginRate() {
+		CreditCardRequest tempRequest = request;
+		tempRequest.margin_rate("1.222");
+		String requestJson = tempRequest.toJson();
+		try {
+			assertTrue(requestJson.contains("\"margin_rate\":\"1.222\""));
+		} catch(AssertionError e) {
+			System.out.println("request: \n" + requestJson);
+		}
+	}
+	
+	@Test
+	public void testRequestRateSource() {
+		CreditCardRequest tempRequest = request;
+		tempRequest.rate_source("whatisthis");
+		String requestJson = tempRequest.toJson();
+		try {
+			assertTrue(requestJson.contains("\"rate_source\":\"whatisthis\""));
+		} catch(AssertionError e) {
+			System.out.println("request: \n" + requestJson);
+		}
+	}
 }
