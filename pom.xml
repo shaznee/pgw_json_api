@@ -1,14 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.firstdata.globalgatewaye4</groupId>
-	<artifactId>e4api</artifactId>
-	<name>FirstData Global Gateway E4 DEMO Client Library</name>
-	<description>Java Client Library for Global Gateway E4 JSON API.
+	<groupId>com.firstdata.payeezy</groupId>
+	<artifactId>pgw_json_api</artifactId>
+	<name>FirstData Payeezy Gateway DEMO Client Library</name>
+	<description>Java Client Library for Payeezy Gateway JSON API.
 
 INTENDED FOR DEMONSTRATION PURPOSES ONLY.  NOT FOR PRODUCTION USE.</description>
-	<url>https://www.firstdata.com/ecommerce</url>
-	<version>1.1.1</version>
+	<url>https://support.payeezy.com</url>
 	<properties>
 		<project.build.sourceEncoding>Cp1252</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>Cp1252</project.reporting.outputEncoding>
@@ -156,4 +155,5 @@ INTENDED FOR DEMONSTRATION PURPOSES ONLY.  NOT FOR PRODUCTION USE.</description>
 			</plugins>
 		</pluginManagement>
 	</build>
+	<version>2.0</version>
 </project>

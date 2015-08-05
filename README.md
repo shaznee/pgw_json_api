@@ -3,7 +3,7 @@ Payeezy Gateway Java API Library
 
 INTENDED FOR DEMONSTRATION PURPOSES ONLY.  NOT FOR PRODUCTION USE.
 
-This is the primary class for interfacing with Global Gateway E4 API.
+This is the primary class for interfacing with Payeezy Gateway JSON API.
 
 #Quick Start:
   
@@ -11,12 +11,12 @@ This is the primary class for interfacing with Global Gateway E4 API.
   
       public Class Client {
  		     public static void main(String[] args) {
- 			     GlobalGatewayE4 e4 = new GlobalGatewayE4(Environment.DEMO, GATEWAY_ID, PASSWORD, KEY_ID, HMAC_KEY);
+ 			     PayeezyGateway pgw = new PayeezyGateway(Environment.DEMO, GATEWAY_ID, PASSWORD, KEY_ID, HMAC_KEY);
       			
- 			     Request request = e4.getRequest();
+ 			     Request request = pgw.getRequest();
       
   		     request
-  			     .cardholder_name("E4 Java Tester")
+  			     .cardholder_name("PGW Java Tester")
   			     .cc_number("")
   			     .cc_expiry("0420")
   			     .transaction_type(TransactionType.PreAuthorization)
