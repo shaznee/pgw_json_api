@@ -37,7 +37,6 @@ import com.firstdata.payeezygateway.util.*;
  *				System.out.println("Bank Message:" + response.bank_message());
  *				System.out.println(response.ctr());
  *			} catch (Exception e) {
- *				// TODO Auto-generated catch block
  *				e.printStackTrace();
  *			}
  * 		}
@@ -124,6 +123,7 @@ public class PayeezyGateway {
 					.registerTypeAdapter(ReleaseType.class, new ReleaseTypeSerializer())
 					.registerTypeAdapter(Boolean.class, new BooleanTypeAdapter())
 					.registerTypeAdapter(PhoneType.class, new PhoneTypeSerializer())
+					.registerTypeAdapter(DCCIndicatorType.class,  new DCCIndicatorTypeSerializer())
 					.excludeFieldsWithoutExposeAnnotation()
 					.setVersion(environment.getVersion())
 					.create();
