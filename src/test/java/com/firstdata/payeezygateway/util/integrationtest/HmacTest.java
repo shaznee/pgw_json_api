@@ -19,7 +19,6 @@ public class HmacTest {
 		try {
 			this.hmac = new Hmac(e4, "hello world");
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	
