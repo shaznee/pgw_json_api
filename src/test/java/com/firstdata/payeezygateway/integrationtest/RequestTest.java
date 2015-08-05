@@ -121,9 +121,135 @@ public class RequestTest {
 		assertTrue(requestJson.contains("\"customer_ref\":\"CustomerReference\""));
 	}
 	
+	// Test each ECommerceFlag value
+	
+	@Test
+	public void testRequestEcommerceFlag1() {
+		CreditCardRequest tempRequest = request;
+		tempRequest.ecommerce_flag(EcommerceFlagType.MOTOSingle);
+		String requestJson = tempRequest.toJson();
+		try {
+			assertTrue(requestJson.contains("\"ecommerce_flag\":\"1\""));
+		} catch(AssertionError e) {
+			System.out.println("request: \n" + requestJson);
+		}
+		
+	}
+	
+	@Test
+	public void testRequestEcommerceFlag2() {
+		CreditCardRequest tempRequest = request;
+		tempRequest.ecommerce_flag(EcommerceFlagType.MOTORecurring);
+		String requestJson = tempRequest.toJson();
+		try {
+			assertTrue(requestJson.contains("\"ecommerce_flag\":\"2\""));
+		} catch(AssertionError e) {
+			System.out.println("request: \n" + requestJson);
+		}
+		
+	}
+	
+	@Test
+	public void testRequestEcommerceFlag3() {
+		CreditCardRequest tempRequest = request;
+		tempRequest.ecommerce_flag(EcommerceFlagType.MOTOInstallment);
+		String requestJson = tempRequest.toJson();
+		try {
+			assertTrue(requestJson.contains("\"ecommerce_flag\":\"3\""));
+		} catch(AssertionError e) {
+			System.out.println("request: \n" + requestJson);
+		}
+		
+	}
+	
+	@Test
+	public void testRequestEcommerceFlag4() {
+		CreditCardRequest tempRequest = request;
+		tempRequest.ecommerce_flag(EcommerceFlagType.MOTODeferred);
+		String requestJson = tempRequest.toJson();
+		try {
+			assertTrue(requestJson.contains("\"ecommerce_flag\":\"4\""));
+		} catch(AssertionError e) {
+			System.out.println("request: \n" + requestJson);
+		}
+		
+	}
+	
+	@Test
+	public void testRequestEcommerceFlag5() {
+		CreditCardRequest tempRequest = request;
+		tempRequest.ecommerce_flag(EcommerceFlagType.ECISecure);
+		String requestJson = tempRequest.toJson();
+		try {
+			assertTrue(requestJson.contains("\"ecommerce_flag\":\"5\""));
+		} catch(AssertionError e) {
+			System.out.println("request: \n" + requestJson);
+		}
+		
+	}
+	
+	@Test
+	public void testRequestEcommerceFlag6() {
+		CreditCardRequest tempRequest = request;
+		tempRequest.ecommerce_flag(EcommerceFlagType.ECINonAuth);
+		String requestJson = tempRequest.toJson();
+		try {
+			assertTrue(requestJson.contains("\"ecommerce_flag\":\"6\""));
+		} catch(AssertionError e) {
+			System.out.println("request: \n" + requestJson);
+		}
+		
+	}
+	
 	@Test
 	public void testRequestEcommerceFlag7() {
-		assertTrue(requestJson.contains("\"ecommerce_flag\":\"7\""));
+		CreditCardRequest tempRequest = request;
+		tempRequest.ecommerce_flag(EcommerceFlagType.ECIEncrypted);
+		String requestJson = tempRequest.toJson();
+		try {
+			assertTrue(requestJson.contains("\"ecommerce_flag\":\"7\""));
+		} catch(AssertionError e) {
+			System.out.println("request: \n" + requestJson);
+		}
+		
+	}
+	
+	@Test
+	public void testRequestEcommerceFlag8() {
+		CreditCardRequest tempRequest = request;
+		tempRequest.ecommerce_flag(EcommerceFlagType.ECINonSecure);
+		String requestJson = tempRequest.toJson();
+		try {
+			assertTrue(requestJson.contains("\"ecommerce_flag\":\"8\""));
+		} catch(AssertionError e) {
+			System.out.println("request: \n" + requestJson);
+		}
+		
+	}
+	
+	@Test
+	public void testRequestEcommerceFlagR() {
+		CreditCardRequest tempRequest = request;
+		tempRequest.ecommerce_flag(EcommerceFlagType.Retail);
+		String requestJson = tempRequest.toJson();
+		try {
+			assertTrue(requestJson.contains("\"ecommerce_flag\":\"R\""));
+		} catch(AssertionError e) {
+			System.out.println("request: \n" + requestJson);
+		}
+	}
+	
+	@Test
+	public void testRequestEcommerceFlagI() {
+		CreditCardRequest tempRequest = request;
+		tempRequest.ecommerce_flag(EcommerceFlagType.IVR);
+		String requestJson = tempRequest.toJson();
+		try {
+			assertTrue(requestJson.contains("\"ecommerce_flag\":\"I\""));
+		} catch(AssertionError e) {
+			System.out.println("request: \n" + requestJson);
+		}
+		
 	}
 	
 	@Test
