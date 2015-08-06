@@ -13,7 +13,7 @@ This is the primary class for interfacing with Payeezy Gateway JSON API.
  		     public static void main(String[] args) {
  			     PayeezyGateway pgw = new PayeezyGateway(Environment.DEMO, GATEWAY_ID, PASSWORD, KEY_ID, HMAC_KEY);
       			
- 			     Request request = pgw.getRequest();
+ 			     CreditCardRequest request = pgw.getCreditCardRequest();
       
   		     request
   			     .cardholder_name("PGW Java Tester")
