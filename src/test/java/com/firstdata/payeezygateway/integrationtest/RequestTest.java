@@ -50,7 +50,7 @@ public class RequestTest {
 				.transarmor_token("9999888877776666")
 				.credit_card_type(CreditCardType.Visa)
 				.ean("777")
-				.virtual_card("virtual")
+				.virtual_card(true)
 				.card_cost(new BigDecimal("0.0"))
 				.fraud_suspected("false")
 				.fee_amount(new BigDecimal("1.00"));
@@ -329,7 +329,7 @@ public class RequestTest {
 
 	@Test
 	public void testRequestVirtualCard() {
-		assertTrue(requestJson.contains("\"virtual_card\":\"virtual\""));
+		assertTrue(requestJson.contains("\"virtual_card\":true"));
 	}
 	
 	@Test

@@ -55,7 +55,7 @@ public abstract class Request<T extends Request<T>> {
 	@Expose	private String transarmor_token;
 	@Expose	private CreditCardType credit_card_type;
 	@Expose	private String ean;
-	@Expose	private String virtual_card;
+	@Expose	private Boolean virtual_card;
 	@Expose	private BigDecimal card_cost;
 	@Expose	private String fraud_suspected;
 	@Expose	private String tpp_id;
@@ -692,7 +692,7 @@ public abstract class Request<T extends Request<T>> {
 	 *            not. This can only be used for ValueLink transactions.
 	 * @return {@link #Request}
 	 */
-	public T virtual_card(String virtual_card) {
+	public T virtual_card(Boolean virtual_card) {
 		this.virtual_card = virtual_card;
 		return self();
 	}
