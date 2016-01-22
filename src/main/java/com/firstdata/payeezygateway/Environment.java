@@ -13,6 +13,7 @@ public class Environment {
 	 * Prepopulated values for accessing the GGe4 demo environment.
 	 */
 	public static final Environment DEMO = new Environment("https://api.demo.globalgatewaye4.firstdata.com/transaction/v" + CURRENT_VERSION);
+	public static final Environment CERT = new Environment("https://api-crt.gateway.payeezytest.com/transaction/v" + CURRENT_VERSION);
 	
 	public final String baseURL;
 	

@@ -6,6 +6,7 @@ import java.security.InvalidKeyException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.text.SimpleDateFormat;
+import java.util.Base64;
 import java.util.Date;
 import java.util.TimeZone;
 
@@ -15,7 +16,7 @@ import javax.crypto.spec.SecretKeySpec;
 import com.firstdata.payeezygateway.PayeezyGateway;
 import com.firstdata.payeezygateway.util.Http;
 
-import org.apache.commons.codec.binary.*;
+//import org.apache.commons.codec.binary.*;
 
 /**
  * @author Steve Copous <steve.copous@firstdata.com>
@@ -133,7 +134,7 @@ public class Hmac {
      * @throws InvalidKeyException
      */
     private static String sha1(String s, String keyString) {
-    	Base64 base64 = new Base64();
+//    	Base64 base64 = new Base64();
         SecretKeySpec key;
 		try {
 			key = new SecretKeySpec((keyString).getBytes(myEncoding), myKeySpec);
@@ -141,7 +142,8 @@ public class Hmac {
 	        mac.init(key);
 	        byte[] bytes = mac.doFinal(s.getBytes(myEncoding));
 	        
-	        return new String(base64.encode(bytes));
+//	        return new String(base64.encode(bytes));
+	        return new String(Base64.getEncoder().encodeToString(bytes));
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
