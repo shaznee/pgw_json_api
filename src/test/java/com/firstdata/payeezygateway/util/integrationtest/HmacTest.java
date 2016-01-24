@@ -5,7 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import com.firstdata.payeezygateway.Environment;
-import com.firstdata.payeezygateway.PayeezyGateway;
+import com.firstdata.payeezygateway.models.PayeezyGateway;
 import com.firstdata.payeezygateway.util.Hmac;
 
 public class HmacTest {

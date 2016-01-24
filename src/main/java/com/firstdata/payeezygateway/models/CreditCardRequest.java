@@ -1,4 +1,6 @@
-package com.firstdata.payeezygateway;
+package com.firstdata.payeezygateway.models;
+
+import com.firstdata.payeezygateway.Configuration;
 
 public class CreditCardRequest extends Request<CreditCardRequest> {
 

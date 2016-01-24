@@ -1,5 +1,6 @@
-package com.firstdata.payeezygateway;
+package com.firstdata.payeezygateway.models;
 
+import com.firstdata.payeezygateway.transactiontypes.PhoneType;
 import com.google.gson.annotations.*;
 
 /**

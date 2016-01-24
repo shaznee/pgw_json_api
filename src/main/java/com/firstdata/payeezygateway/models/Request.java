@@ -1,10 +1,14 @@
-package com.firstdata.payeezygateway;
+package com.firstdata.payeezygateway.models;
 
 import java.math.BigDecimal;
 
 import com.google.gson.*;
 import com.google.gson.annotations.*;
+import com.firstdata.payeezygateway.Configuration;
 import com.firstdata.payeezygateway.exceptions.InvalidTransactionException;
+import com.firstdata.payeezygateway.transactiontypes.CreditCardType;
+import com.firstdata.payeezygateway.transactiontypes.DCCIndicatorType;
+import com.firstdata.payeezygateway.transactiontypes.EcommerceFlagType;
 import com.firstdata.payeezygateway.util.Hmac;
 import com.firstdata.payeezygateway.util.Http;
 import com.firstdata.payeezygateway.util.Luhn;
@@ -626,7 +630,7 @@ public abstract class Request<T extends Request<T>> {
 	 *            <li>{@link EcommerceFlagType#Retail} = R</li>
 	 *            </ul>
 	 * @return {@link #Request}
-	 * @see com.firstdata.payeezygateway.EcommerceFlagType#EcommerceFlagType
+	 * @see com.firstdata.payeezygateway.transactiontypes.EcommerceFlagType#EcommerceFlagType
 	 *      EcommerceFlagType
 	 */
 	public T ecommerce_flag(EcommerceFlagType ecommerce_flag) {
@@ -666,7 +670,7 @@ public abstract class Request<T extends Request<T>> {
 	 *            submitted using a regular card number.
 	 *            </p>
 	 * @return {@link #Request}
-	 * @see com.firstdata.payeezygateway.CreditCardType#CreditCardType
+	 * @see com.firstdata.payeezygateway.transactiontypes.CreditCardType#CreditCardType
 	 *      CreditCardType
 	 */
 	public T credit_card_type(CreditCardType credit_card_type) {
@@ -817,7 +821,7 @@ public abstract class Request<T extends Request<T>> {
 	 *            {@link LevelThree} object containing Level Three transaction
 	 *            information.
 	 * @return {@link #Request}
-	 * @see com.firstdata.payeezygateway.LevelThree#LevelThree LevelThree
+	 * @see com.firstdata.payeezygateway.models.LevelThree#LevelThree LevelThree
 	 */
 	public T level3(LevelThree level3) {
 		this.level3 = level3;
@@ -829,7 +833,7 @@ public abstract class Request<T extends Request<T>> {
 	 *            {@link #PaypalRequest} object containing Paypal request
 	 *            information.
 	 * @return {@link #Request}
-	 * @see com.firstdata.payeezygateway.PaypalRequest#PaypalRequest
+	 * @see com.firstdata.payeezygateway.models.PaypalRequest#PaypalRequest
 	 *      PaypalRequest
 	 */
 	public T paypal_transaction_details(PaypalRequest paypalRequest) {
@@ -842,7 +846,7 @@ public abstract class Request<T extends Request<T>> {
 	 *            {@link #SoftDescriptor} object containing soft merchant
 	 *            information.
 	 * @return {@link #Request}
-	 * @see com.firstdata.payeezygateway.SoftDescriptor#SoftDescriptor
+	 * @see com.firstdata.payeezygateway.models.SoftDescriptor#SoftDescriptor
 	 *      SoftDescriptor
 	 */
 	public T soft_descriptor(SoftDescriptor softDescriptor) {
@@ -854,7 +858,7 @@ public abstract class Request<T extends Request<T>> {
 	 * @param address
 	 *            {@link #Address} object containing address information.
 	 * @return {@link #Request}
-	 * @see com.firstdata.payeezygateway.Address#Address address
+	 * @see com.firstdata.payeezygateway.models.Address#Address address
 	 */
 	public T address(Address address) {
 		this.address = address;

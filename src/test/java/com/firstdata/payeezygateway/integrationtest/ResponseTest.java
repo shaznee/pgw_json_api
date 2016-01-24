@@ -1,8 +1,8 @@
 package com.firstdata.payeezygateway.integrationtest;
 
 import com.firstdata.payeezygateway.Environment;
-import com.firstdata.payeezygateway.PayeezyGateway;
-import com.firstdata.payeezygateway.Response;
+import com.firstdata.payeezygateway.models.PayeezyGateway;
+import com.firstdata.payeezygateway.models.Response;
 import com.google.gson.Gson;
 import static org.junit.Assert.*;
 import org.junit.Before;

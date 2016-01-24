@@ -1,4 +1,4 @@
-package com.firstdata.payeezygateway;
+package com.firstdata.payeezygateway.transactiontypes;
 
 public class PhoneType {
 	private String _value;

@@ -1,4 +1,4 @@
-package com.firstdata.payeezygateway;
+package com.firstdata.payeezygateway.transactiontypes;
 
 /**
  * @author Steve Copous <steve.copous@firstdata.com>

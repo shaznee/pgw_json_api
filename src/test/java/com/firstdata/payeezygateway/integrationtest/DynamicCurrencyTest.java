@@ -5,15 +5,15 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.firstdata.payeezygateway.Address;
-import com.firstdata.payeezygateway.CreditCardRequest;
-import com.firstdata.payeezygateway.DynamicCurrency;
 import com.firstdata.payeezygateway.Environment;
-import com.firstdata.payeezygateway.PayeezyGateway;
-import com.firstdata.payeezygateway.PhoneType;
-import com.firstdata.payeezygateway.TransactionType;
 import com.firstdata.payeezygateway.DemoValues.CreditCardNumber;
 import com.firstdata.payeezygateway.DemoValues.TransactionAmount;
+import com.firstdata.payeezygateway.models.Address;
+import com.firstdata.payeezygateway.models.CreditCardRequest;
+import com.firstdata.payeezygateway.models.DynamicCurrency;
+import com.firstdata.payeezygateway.models.PayeezyGateway;
+import com.firstdata.payeezygateway.models.TransactionType;
+import com.firstdata.payeezygateway.transactiontypes.PhoneType;
 
 public class DynamicCurrencyTest {
 	private PayeezyGateway e4;

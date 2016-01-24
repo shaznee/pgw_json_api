@@ -1,7 +1,11 @@
-package com.firstdata.payeezygateway;
+package com.firstdata.payeezygateway.models;
 
 import java.math.BigDecimal;
 
+import com.firstdata.payeezygateway.Configuration;
+import com.firstdata.payeezygateway.transactiontypes.CheckType;
+import com.firstdata.payeezygateway.transactiontypes.CustomerIdType;
+import com.firstdata.payeezygateway.transactiontypes.ReleaseType;
 import com.firstdata.payeezygateway.util.Hmac;
 import com.firstdata.payeezygateway.util.Http;
 import com.google.gson.*;

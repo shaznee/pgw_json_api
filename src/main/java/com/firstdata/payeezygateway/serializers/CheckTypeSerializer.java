@@ -2,7 +2,7 @@ package com.firstdata.payeezygateway.serializers;
 
 import java.lang.reflect.Type;
 
-import com.firstdata.payeezygateway.CheckType;
+import com.firstdata.payeezygateway.transactiontypes.CheckType;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonPrimitive;
 import com.google.gson.JsonSerializationContext;

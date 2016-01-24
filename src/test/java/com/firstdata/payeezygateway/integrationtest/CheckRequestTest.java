@@ -7,12 +7,12 @@ import java.math.BigDecimal;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.firstdata.payeezygateway.CheckRequest;
-import com.firstdata.payeezygateway.CheckType;
-import com.firstdata.payeezygateway.CustomerIdType;
 import com.firstdata.payeezygateway.Environment;
-import com.firstdata.payeezygateway.PayeezyGateway;
-import com.firstdata.payeezygateway.ReleaseType;
+import com.firstdata.payeezygateway.models.CheckRequest;
+import com.firstdata.payeezygateway.models.PayeezyGateway;
+import com.firstdata.payeezygateway.transactiontypes.CheckType;
+import com.firstdata.payeezygateway.transactiontypes.CustomerIdType;
+import com.firstdata.payeezygateway.transactiontypes.ReleaseType;
 
 public class CheckRequestTest {
 	private PayeezyGateway e4;

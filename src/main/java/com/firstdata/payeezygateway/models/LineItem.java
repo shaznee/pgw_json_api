@@ -1,6 +1,8 @@
-package com.firstdata.payeezygateway;
+package com.firstdata.payeezygateway.models;
 
 import java.math.BigDecimal;
+
+import com.firstdata.payeezygateway.transactiontypes.TaxType;
 import com.google.gson.annotations.*;
 
 /**

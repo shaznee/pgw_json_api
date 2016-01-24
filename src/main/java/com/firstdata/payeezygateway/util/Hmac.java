@@ -13,7 +13,7 @@ import java.util.TimeZone;
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 
-import com.firstdata.payeezygateway.PayeezyGateway;
+import com.firstdata.payeezygateway.models.PayeezyGateway;
 import com.firstdata.payeezygateway.util.Http;
 
 //import org.apache.commons.codec.binary.*;

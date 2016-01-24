@@ -1,9 +1,19 @@
-package com.firstdata.payeezygateway;
+package com.firstdata.payeezygateway.models;
 
 import org.apache.commons.lang.Validate;
 
 import com.google.gson.*;
+import com.firstdata.payeezygateway.Configuration;
+import com.firstdata.payeezygateway.Environment;
 import com.firstdata.payeezygateway.serializers.*;
+import com.firstdata.payeezygateway.transactiontypes.CheckType;
+import com.firstdata.payeezygateway.transactiontypes.CreditCardType;
+import com.firstdata.payeezygateway.transactiontypes.CustomerIdType;
+import com.firstdata.payeezygateway.transactiontypes.DCCIndicatorType;
+import com.firstdata.payeezygateway.transactiontypes.EcommerceFlagType;
+import com.firstdata.payeezygateway.transactiontypes.PhoneType;
+import com.firstdata.payeezygateway.transactiontypes.ReleaseType;
+import com.firstdata.payeezygateway.transactiontypes.TaxType;
 import com.firstdata.payeezygateway.util.*;
 
 /**

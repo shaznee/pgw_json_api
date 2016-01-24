@@ -1,4 +1,4 @@
-package com.firstdata.payeezygateway;
+package com.firstdata.payeezygateway.models;
 
 import java.math.BigDecimal;
 

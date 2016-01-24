@@ -5,13 +5,13 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.firstdata.payeezygateway.CreditCardRequest;
 import com.firstdata.payeezygateway.Environment;
-import com.firstdata.payeezygateway.PayeezyGateway;
-import com.firstdata.payeezygateway.LevelThree;
-import com.firstdata.payeezygateway.Request;
-import com.firstdata.payeezygateway.Response;
-import com.firstdata.payeezygateway.ShipToAddress;
+import com.firstdata.payeezygateway.models.CreditCardRequest;
+import com.firstdata.payeezygateway.models.LevelThree;
+import com.firstdata.payeezygateway.models.PayeezyGateway;
+import com.firstdata.payeezygateway.models.Request;
+import com.firstdata.payeezygateway.models.Response;
+import com.firstdata.payeezygateway.models.ShipToAddress;
 import com.google.gson.Gson;
 
 public class ShipToAddressTest {

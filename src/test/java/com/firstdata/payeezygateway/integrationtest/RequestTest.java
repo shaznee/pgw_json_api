@@ -11,6 +11,12 @@ import org.junit.Test;
 import com.firstdata.payeezygateway.*;
 import com.firstdata.payeezygateway.DemoValues.CreditCardNumber;
 import com.firstdata.payeezygateway.DemoValues.TransactionAmount;
+import com.firstdata.payeezygateway.models.CreditCardRequest;
+import com.firstdata.payeezygateway.models.PayeezyGateway;
+import com.firstdata.payeezygateway.models.TransactionType;
+import com.firstdata.payeezygateway.transactiontypes.CreditCardType;
+import com.firstdata.payeezygateway.transactiontypes.DCCIndicatorType;
+import com.firstdata.payeezygateway.transactiontypes.EcommerceFlagType;
 
 public class RequestTest {
 

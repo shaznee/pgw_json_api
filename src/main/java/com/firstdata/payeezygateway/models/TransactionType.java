@@ -1,7 +1,8 @@
-package com.firstdata.payeezygateway;
+package com.firstdata.payeezygateway.models;
 
 import java.lang.reflect.Type;
 
+import com.firstdata.payeezygateway.transactiontypes.CreditCardType;
 import com.google.gson.*;
 
 /**

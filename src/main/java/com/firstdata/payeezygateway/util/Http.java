@@ -2,9 +2,9 @@ package com.firstdata.payeezygateway.util;
 
 import javax.net.ssl.*;
 
-import com.firstdata.payeezygateway.CheckRequest;
-import com.firstdata.payeezygateway.Request;
 import com.firstdata.payeezygateway.exceptions.*;
+import com.firstdata.payeezygateway.models.CheckRequest;
+import com.firstdata.payeezygateway.models.Request;
 
 import java.io.IOException;
 import java.io.InputStream;

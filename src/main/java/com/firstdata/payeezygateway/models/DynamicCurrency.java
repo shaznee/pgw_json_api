@@ -1,4 +1,4 @@
-package com.firstdata.payeezygateway;
+package com.firstdata.payeezygateway.models;
 /**
  * @author Steve Copous <steve.copous@firstdata.com>
  *

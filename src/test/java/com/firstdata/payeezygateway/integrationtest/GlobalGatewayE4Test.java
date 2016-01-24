@@ -5,7 +5,7 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
 import com.firstdata.payeezygateway.Environment;
-import com.firstdata.payeezygateway.PayeezyGateway;
+import com.firstdata.payeezygateway.models.PayeezyGateway;
 
 public class GlobalGatewayE4Test {
 	PayeezyGateway e4;

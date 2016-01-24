@@ -7,16 +7,16 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.firstdata.payeezygateway.CreditCardRequest;
-import com.firstdata.payeezygateway.EcommerceFlagType;
 import com.firstdata.payeezygateway.Environment;
-import com.firstdata.payeezygateway.PayeezyGateway;
-import com.firstdata.payeezygateway.Request;
-import com.firstdata.payeezygateway.Response;
-import com.firstdata.payeezygateway.SoftDescriptor;
-import com.firstdata.payeezygateway.TransactionType;
 import com.firstdata.payeezygateway.DemoValues.CreditCardNumber;
 import com.firstdata.payeezygateway.DemoValues.TransactionAmount;
+import com.firstdata.payeezygateway.models.CreditCardRequest;
+import com.firstdata.payeezygateway.models.PayeezyGateway;
+import com.firstdata.payeezygateway.models.Request;
+import com.firstdata.payeezygateway.models.Response;
+import com.firstdata.payeezygateway.models.SoftDescriptor;
+import com.firstdata.payeezygateway.models.TransactionType;
+import com.firstdata.payeezygateway.transactiontypes.EcommerceFlagType;
 import com.google.gson.Gson;
 
 public class SoftDescriptorTest {
